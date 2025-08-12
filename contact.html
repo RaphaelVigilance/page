@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ติดต่อ | 🔧 TODO: ชื่อคุณ</title>
+  <meta name="description" content="ช่องทางติดต่อของ 🔧 TODO: ชื่อคุณ" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="brand">🔧 TODO: Your Name</a>
+    <nav>
+      <a href="/works.html">ผลงาน</a>
+      <a class="active btn" href="/contact.html">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <h1>ติดต่อ</h1>
+    <p class="muted">ยินดีรับงานและคุยไอเดีย 😊</p>
+
+    <div class="contact-cards">
+      <a class="contact-card" href="mailto:🔧 TODO: your@email.com">
+        <strong>Email</strong>
+        <span>🔧 TODO: your@email.com</span>
+      </a>
+      <a class="contact-card" href="https://github.com/🔧TODO" target="_blank" rel="noopener">
+        <strong>GitHub</strong>
+        <span>github.com/🔧TODO</span>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/🔧TODO" target="_blank" rel="noopener">
+        <strong>LinkedIn</strong>
+        <span>linkedin.com/in/🔧TODO</span>
+      </a>
+    </div>
+
+    <!-- ถ้าต้องการฟอร์มส่งอีเมลแบบไม่ต้องมีแบ็กเอนด์ แนะนำบริการอย่าง Formspree / Getform -->
+    <details class="tip">
+      <summary>อยากมีฟอร์มส่งข้อความ?</summary>
+      <p>
+        ใช้ <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> ได้ฟรี: เปลี่ยน `action` เป็น endpoint ของคุณ แล้วใส่ `method="POST"`.
+      </p>
+      <form action="https://formspree.io/f/🔧YOUR_ID" method="POST" class="form">
+        <label>ชื่อ
+          <input name="name" required />
+        </label>
+        <label>อีเมล
+          <input type="email" name="email" required />
+        </label>
+        <label>ข้อความ
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn" type="submit">ส่ง</button>
+      </form>
+    </details>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 🔧 TODO: Your Name · <a href="/">Home</a></p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
