@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🔧 TODO: ชื่อคุณ – Portfolio</title>
+  <meta name="description" content="🔧 TODO: แนะนำตัวสั้น ๆ และสกิลหลัก" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:," />
+  <meta property="og:title" content="🔧 TODO: ชื่อคุณ – Portfolio" />
+  <meta property="og:description" content="🔧 TODO: ไฮไลต์ผลงานและข้อมูลติดต่อ" />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="brand">🔧 TODO: Your Name</a>
+    <nav>
+      <a href="/works.html">ผลงาน</a>
+      <a href="/contact.html" class="btn">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>สวัสดีครับ/ค่ะ ผม/ฉันคือ <span class="accent">🔧 TODO: Your Name</span></h1>
+      <p class="lead">🔧 TODO: ใส่คำอธิบายสั้น ๆ (เช่น Frontend Developer | Embedded | Data), โฟกัสสิ่งที่คุณทำได้ดี</p>
+      <div class="hero-ctas">
+        <a class="btn" href="/works.html">ดูผลงาน</a>
+        <a class="btn secondary" href="/contact.html">คุยงานกัน</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>สกิลเด่น</h2>
+      <ul class="chip-list">
+        <li>🔧 TODO: HTML/CSS/JS</li>
+        <li>🔧 TODO: React / Vue</li>
+        <li>🔧 TODO: Python / MicroPython / ESP32</li>
+        <li>🔧 TODO: Data / ML</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>ผลงานเด่นล่าสุด</h2>
+      <div class="grid cards">
+        <article class="card">
+          <h3>🔧 TODO: Project A</h3>
+          <p>อธิบายสั้น ๆ 1–2 บรรทัด ว่าทำอะไร ใช้เทคโนโลยีอะไร และผลลัพธ์คืออะไร</p>
+          <a class="btn small" href="#">ดูรายละเอียด</a>
+        </article>
+        <article class="card">
+          <h3>🔧 TODO: Project B</h3>
+          <p>อธิบายสั้น ๆ 1–2 บรรทัด</p>
+          <a class="btn small" href="#">ดูรายละเอียด</a>
+        </article>
+        <article class="card">
+          <h3>🔧 TODO: Project C</h3>
+          <p>อธิบายสั้น ๆ 1–2 บรรทัด</p>
+          <a class="btn small" href="#">ดูรายละเอียด</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>พร้อมคุยงานหรือยัง?</h2>
+      <p>แวะไปหน้า <a href="/contact.html">ติดต่อ</a> ได้เลย</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 🔧 TODO: Your Name · <a href="/contact.html">Contact</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
