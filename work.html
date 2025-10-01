@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ผลงาน | 🔧 TODO: ชื่อคุณ</title>
+  <title>Work Experience</title>
   <meta name="description" content="รวมผลงานของ 🔧 TODO: ชื่อคุณ" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:," />
@@ -12,14 +12,14 @@
   <header class="site-header">
     <a href="/" class="brand">🔧 TODO: Your Name</a>
     <nav>
-      <a class="active" href="/works.html">ผลงาน</a>
-      <a href="/contact.html" class="btn">ติดต่อ</a>
+      <a class="active" href="works.html">Working Experience</a>
+      <a href="contact.html" class="btn">Contact</a>
     </nav>
   </header>
 
   <main class="container">
-    <h1>ผลงาน</h1>
-    <p class="muted">เลือกบางชิ้นที่เล่าเรื่องความสามารถของคุณได้ดีที่สุด</p>
+    <h1>Project</h1>
+    <p class="muted">Outstanding Projects</p>
 
     <div class="filters">
       <!-- ตัวอย่างฟิลเตอร์แบบไม่ใช้ JS: ลิงก์แฮชไปยังแถวที่จัดกลุ่ม -->
@@ -28,15 +28,13 @@
       <a href="#data">Data</a>
     </div>
 
-    <h2 id="web">Web</h2>
+    <h2 id="web">Projects</h2>
     <div class="grid cards">
       <article class="card">
-        <h3>🔧 TODO: เว็บโปรเจกต์ 1</h3>
-        <ul class="meta">
-          <li>Stack: HTML/CSS/JS</li>
-          <li>บทบาท: Dev/Design</li>
-        </ul>
-        <p>สรุปสั้น ๆ วัตถุประสงค์ ผลลัพธ์ ตัวเลขที่ชี้วัดได้</p>
+        <h3>Project IOT</h3>
+          <img src="IOT.png" width="192" height="108">
+          <p>ระบบ IOT โดยมี Node-red เป็น Server และสื่อสารผ่าน MQTT Protocol เข้า ESP32 สื่อสารกับ ATMEGA 8266 ด้วย UART Protocol</p>
+          <a class="btn small" href="#">ดูรายละเอียด</a>
         <div class="actions">
           <a class="btn small" href="#">Live</a>
           <a class="btn small secondary" href="#">Repo</a>
@@ -88,7 +86,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> 🔧 TODO: Your Name · <a href="/contact.html">Contact</a></p>
+    <p>© <span id="year"></span> 🔧 TODO: Your Name · <a href="contact.html">Contact</a></p>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
