@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project IOT — Sorayut Thongtaweephon</title>
+  <meta name="description" content="ระบบ IOT โดยมี Node-red เป็น Server สื่อสารผ่าน MQTT Protocol" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand">Mr.Sorayut Thongtaweephon</a>
+    <nav>
+      <a href="works.html" class="btn">Working Experience</a>
+      <a href="contact.html" class="btn">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <a href="works.html" class="btn secondary small">← กลับ</a>
+
+    <section class="hero">
+      <h1>Project IOT</h1>
+      <ul class="meta">
+        <li>Stack: Node-RED, MQTT, ESP32, ATmega328P, C++</li>
+        <li>บทบาท: Hardware / Firmware / Server</li>
+      </ul>
+    </section>
+
+    <section>
+      <img src="IOT.png" width="100%" alt="Smart Home IOT Project" style="border-radius:8px;display:block;margin-bottom:1.5rem;">
+      <img src="Smarthome.jpg" width="100%" alt="Smart Home IOT Project" style="border-radius:8px;display:block;margin-bottom:1.5rem;">
+      <img src="Smarthome2.jpg" width="100%" alt="Smart Home IOT Project" style="border-radius:8px;display:block;margin-bottom:1.5rem;">
+      <h2>Video</h2>
+      <p>สามารถดูวิดีโอการทำงานของระบบได้ <a href="https://youtube.com/playlist?list=PLCyqf5hTKis9PwkaI84nEuiyrmiIXWlRq&si=2HC6AJ80T7gZRDqh" target="_blank">ลิงก์นี้</a></p>
+      <h2>รายละเอียดโปรเจกต์</h2>
+      <p>ระบบ IOT โดยมี Node-RED เป็น Server และสื่อสารผ่าน MQTT Protocol เข้า ESP32 สื่อสารกับ ATmega328P ด้วย UART Protocol</p>
+    </section>
+
+    <section>
+      <h2>การทำงานของระบบ</h2>
+      <ul class="chip-list">
+        <li>Node-RED รับคำสั่งผ่าน Dashboard</li>
+        <li>ส่งข้อมูลผ่าน MQTT Broker</li>
+        <li>ESP32 รับ MQTT แล้วส่งต่อผ่าน UART</li>
+        <li>ATmega328P ควบคุมอุปกรณ์ปลายทาง</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>เทคโนโลยีที่ใช้</h2>
+      <ul class="chip-list">
+        <li>Node-RED</li>
+        <li>MQTT Protocol</li>
+        <li>ESP32</li>
+        <li>ATmega328P</li>
+        <li>UART Protocol</li>
+        <li>C++</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Sorayut Thongtaweephon · <a href="contact.html">Contact</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

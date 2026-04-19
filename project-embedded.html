@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Handmade Microcontroller — Sorayut Thongtaweephon</title>
+  <meta name="description" content="ออกแบบและสร้าง Microcontroller จาก ATmega328P พร้อมใช้งานในโครงการต่าง ๆ" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand">Mr.Sorayut Thongtaweephon</a>
+    <nav>
+      <a href="works.html" class="btn">Working Experience</a>
+      <a href="contact.html" class="btn">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <a href="works.html" class="btn secondary small">← กลับ</a>
+
+    <section class="hero">
+      <h1>Handmade Microcontroller</h1>
+      <ul class="meta">
+        <li>Stack: ATmega328P, C++</li>
+        <li>บทบาท: Hardware / Firmware</li>
+      </ul>
+    </section>
+
+    <section>
+      <img src="atmel328p.jpg" width="100%" alt="Handmade Microcontroller based on ATmega328P" style="border-radius:8px;display:block;margin-bottom:1.5rem;">
+      <h2>รายละเอียดโปรเจกต์</h2>
+      <p>ออกแบบและสร้าง Microcontroller จาก ATmega328P พร้อมใช้งานในโครงการต่าง ๆ โดยออกแบบวงจรและ PCB เอง</p>
+    </section>
+
+    <section>
+      <h2>การทำงานของระบบ</h2>
+      <ul class="chip-list">
+        <li>ออกแบบวงจร Schematic</li>
+        <li>ออกแบบ PCB Layout</li>
+        <li>บัดกรีและประกอบชิ้นส่วน</li>
+        <li>เขียน Firmware ด้วย C++</li>
+        <li>ทดสอบและนำไปใช้งานจริง</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>เทคโนโลยีที่ใช้</h2>
+      <ul class="chip-list">
+        <li>ATmega328P</li>
+        <li>C++</li>
+        <li>PCB Design</li>
+        <li>Soldering</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Sorayut Thongtaweephon · <a href="contact.html">Contact</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

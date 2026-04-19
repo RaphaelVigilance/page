@@ -3,55 +3,56 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ผลงาน | 🔧 TODO: ชื่อคุณ</title>
-  <meta name="description" content="รวมผลงานของ 🔧 TODO: ชื่อคุณ" />
+  <title>Work Experience — Sorayut Thongtaweephon</title>
+  <meta name="description" content="Portfolio of Sorayut Thongtaweephon — Electronics Systems Engineer" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:," />
+  <meta property="og:title" content="Work Experience | Sorayut Thongtaweephon" />
+  <meta property="og:description" content="Portfolio of Sorayut Thongtaweephon — Electronics Systems Engineer" />
+  <meta property="og:type" content="website" />
 </head>
 <body>
   <header class="site-header">
-    <a href="/page" class="brand">🔧 TODO: Your Name</a>
+    <a href="index.html" class="brand">Mr.Sorayut Thongtaweephon</a>
     <nav>
-      <a class="active" href="works.html">ผลงาน</a>
-      <a href="contact.html" class="btn">ติดต่อ</a>
+      <a class="btn active" href="works.html">Working Experience</a>
+      <a href="contact.html" class="btn">Contact</a>
     </nav>
   </header>
 
   <main class="container">
-    <h1>ผลงาน</h1>
-    <p class="muted">เลือกบางชิ้นที่เล่าเรื่องความสามารถของคุณได้ดีที่สุด</p>
+    <h1>Projects</h1>
+
 
     <div class="filters">
-      <!-- ตัวอย่างฟิลเตอร์แบบไม่ใช้ JS: ลิงก์แฮชไปยังแถวที่จัดกลุ่ม -->
-      <a href="#web">Web</a>
+      <a href="#iot">IOT</a>
       <a href="#embedded">Embedded</a>
-      <a href="#data">Data</a>
     </div>
 
-    <h2 id="web">Web</h2>
+    <h2 id="iot">IOT</h2>
     <div class="grid cards">
       <article class="card">
-        <h3>🔧 TODO: เว็บโปรเจกต์ 1</h3>
-        <ul class="meta">
-          <li>Stack: HTML/CSS/JS</li>
-          <li>บทบาท: Dev/Design</li>
+        <h3>Project IOT</h3>
+        <img src="SmartHome.jpg" width="192" height="108" alt="Smart Home IOT Project">
+                <ul class="meta">
+          <li>Stack: MQTT Protocol,Node-red, ESP32, ATmega328P, C++</li>
+          <li>บทบาท: Hardware,Firmware,Software</li>
         </ul>
-        <p>สรุปสั้น ๆ วัตถุประสงค์ ผลลัพธ์ ตัวเลขที่ชี้วัดได้</p>
+        <p>ระบบ IOT โดยมี Node-red เป็น Server และสื่อสารผ่าน MQTT Protocol เข้า ESP32 สื่อสารกับ ATmega 328p ด้วย UART Protocol</p>
         <div class="actions">
-          <a class="btn small" href="#">Live</a>
-          <a class="btn small secondary" href="#">Repo</a>
+          <a class="btn small" href="project-iot.html">ดูรายละเอียด</a>
         </div>
       </article>
       <article class="card">
-        <h3>🔧 TODO: เว็บโปรเจกต์ 2</h3>
-        <ul class="meta">
-          <li>Stack: React</li>
-          <li>บทบาท: Frontend</li>
+        <h3>Project Train TRRN Railway Challenge 2025-2026</h3>
+        <img src="TRRN.jpg" width="192" height="108" alt="TRRN Railway Challenge 2026 Project">
+                <ul class="meta">
+          <li>Stack: ATmega2560, C++, ESP32, MQTT Protocol, Node-red, Network, Electrical Design and Wiring, Electronic Design,</li>
+          <li>บทบาท: Hardware,Firmware,Software</li>
         </ul>
-        <p>สรุปสั้น ๆ</p>
+        <p>ออกแบบระบบควบคุมรถราง โดยใช้ Microcontroller ร่วมกับระบบ Project IOT โดยสามารถสั่งการระบบขับเคลื่อนได้ในระยะไกล และมีระบบตรวจสอบสถานะการทำงาน</p>
         <div class="actions">
-          <a class="btn small" href="#">Live</a>
-          <a class="btn small secondary" href="#">Repo</a>
+          <a class="btn small" href="project-trrn.html">ดูรายละเอียด</a>
         </div>
       </article>
     </div>
@@ -59,37 +60,26 @@
     <h2 id="embedded">Embedded</h2>
     <div class="grid cards">
       <article class="card">
-        <h3>🔧 TODO: ESP32 Robot Car</h3>
+        <h3>Handmade Microcontroller</h3>
+        <img src="atmel328p.jpg" width="108" height="108" alt="Handmade Microcontroller based on ATmega328P">
         <ul class="meta">
-          <li>Stack: MicroPython, ESP32</li>
-          <li>บทบาท: Firmware/Control</li>
+          <li>Stack: ATmega328P, Electronic Design</li>
+          <li>บทบาท: Hardware </li>
         </ul>
-        <p>เล่าวิธีแก้ปัญหา เทคนิค และผลลัพธ์</p>
+        <p>ออกแบบและสร้าง Microcontroller พร้อมใช้งานในโครงการต่าง ๆ</p>
         <div class="actions">
-          <a class="btn small secondary" href="#">Repo</a>
-        </div>
-      </article>
-    </div>
-
-    <h2 id="data">Data</h2>
-    <div class="grid cards">
-      <article class="card">
-        <h3>🔧 TODO: Dashboard / ML</h3>
-        <ul class="meta">
-          <li>Stack: Python, Pandas</li>
-          <li>บทบาท: Data/Analysis</li>
-        </ul>
-        <p>ผลลัพธ์ที่วัดได้ เช่น ลดเวลาประมวลผล 30%</p>
-        <div class="actions">
-          <a class="btn small secondary" href="#">Repo</a>
+          <a class="btn small" href="project-embedded.html">ดูรายละเอียด</a>
         </div>
       </article>
     </div>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> 🔧 TODO: Your Name · <a href="contact.html">Contact</a></p>
+    <p>© <span id="year"></span> Sorayut Thongtaweephon · <a href="contact.html">Contact</a></p>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

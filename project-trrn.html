@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project TRRN Railway Challenge 2026 — Sorayut Thongtaweephon</title>
+  <meta name="description" content="ออกแบบระบบควบคุมรถรางด้วย Microcontroller และระบบ IOT" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand">Mr.Sorayut Thongtaweephon</a>
+    <nav>
+      <a href="works.html" class="btn">Working Experience</a>
+      <a href="contact.html" class="btn">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <a href="works.html" class="btn secondary small">← กลับ</a>
+
+    <section class="hero">
+      <h1>Project Train TRRN Railway Challenge 2026</h1>
+      <ul class="meta">
+        <li>Stack: Microcontroller, MQTT, ESP32, C++</li>
+        <li>บทบาท: Hardware / Firmware / Control System</li>
+      </ul>
+    </section>
+
+    <section>
+      <img src="TRRN.jpg" width="100%" alt="TRRN Railway Challenge 2026 Project" style="border-radius:8px;display:block;margin-bottom:1.5rem;">
+      <img src="TRRN2.jpg" width="100%" alt="TRRN Railway Challenge 2026 Project" style="border-radius:8px;display:block;margin-bottom:1.5rem;">
+      <img src="TRRNposter.png" width="100%" alt="TRRN Railway Challenge 2026 Project" style="border-radius:8px;display:block;margin-bottom:1.5rem;">
+      <h2>Video</h2>
+      <p>สามารถดูวิดีโอการทำเดินรถด้วยระบบได้ <a href="https://www.facebook.com/share/r/1BE6AzMKyA/" target="_blank">ลิงก์นี้</a></p>
+      <h2>รายละเอียดโปรเจกต์</h2>
+      <p>ออกแบบระบบควบคุมรถราง โดยใช้ Microcontroller ร่วมกับระบบ IOT สามารถสั่งการระบบขับเคลื่อนได้ในระยะไกล และมีระบบตรวจสอบสถานะการทำงาน</p>
+    </section>
+
+    <section>
+      <h2>การทำงานของระบบ</h2>
+      <ul class="chip-list">
+        <li>สั่งการระบบขับเคลื่อนในระยะไกลผ่าน IOT</li>
+        <li>ตรวจสอบสถานะการทำงานแบบ Real-time</li>
+        <li>ควบคุมผ่าน Microcontroller</li>
+        <li>สื่อสารผ่าน MQTT Protocol</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>เทคโนโลยีที่ใช้</h2>
+      <ul class="chip-list">
+        <li>Microcontroller</li>
+        <li>ESP32</li>
+        <li>MQTT Protocol</li>
+        <li>Node-RED</li>
+        <li>C++</li>
+        <li>AWS Cloud</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Sorayut Thongtaweephon · <a href="contact.html">Contact</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
