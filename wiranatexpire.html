@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WIRANAT Coral Life</title>
+  <link rel="icon" type="image/x-icon" href="iconcoral.png">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial,sans-serif;
+    }
+
+    body{
+      margin:0;
+      color:#222;
+      min-height:100vh;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+
+      /* background */
+      background:
+        linear-gradient(
+          rgba(255,255,255,0.60),
+          rgba(255,255,255,0.70)
+        ),
+        url("bg-01.png");
+
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+    }
+
+    /* background */
+    .container{
+      width:100%;
+      max-width:900px;
+      text-align:center;
+      position:relative;
+      z-index:1;
+    }
+
+    .logo{
+      width:120px;
+      height:120px;
+      border-radius:20px;
+      object-fit:cover;
+      margin-bottom:20px;
+    }
+
+    h1{
+      font-size:2rem;
+      margin-bottom:10px;
+    }
+
+    .subtitle{
+      color:#666;
+      margin-bottom:40px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .card{
+    background:rgba(255,255,255,0.95);
+    border:1px solid rgba(255,255,255,0.8);
+    border-radius:24px;
+    padding:25px;
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,0.06);
+
+    backdrop-filter: blur(8px);
+
+    cursor:pointer;
+    transition:.25s;
+    text-decoration:none;
+    color:inherit;
+    }
+
+    .location-card{
+    grid-column:span 2;
+    }
+
+    .card:hover{
+      transform:translateY(-3px);
+      box-shadow:0 8px 20px rgba(0,0,0,.08);
+    }
+
+    .card h3{
+      margin-bottom:10px;
+    }
+
+    .footer{
+      margin-top:40px;
+      color:#999;
+      font-size:.9rem;
+    }
+
+    @media (max-width:768px){
+
+    .container{
+      width:92%;
+      max-width:380px;   /* ปรับได้ 320–400 */
+      margin:auto;
+    }
+
+    .cards{
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+
+    .location-card{
+      grid-column:span 1;
+    }
+
+    .card{
+      min-height:100px;
+      padding:18px;
+    }
+
+    h1{
+      font-size:1.25rem;
+    }
+
+    .subtitle{
+      font-size:.9rem;
+    }
+
+  }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- LOGO -->
+    <img src="wiranat.png" class="logo" alt="logo">
+
+    <!-- PROFILE -->
+    <h1>WIRANAT WIRIYAKLUYTHONG(NAT)</h1>
+    <p class="subtitle">
+      BUSSINESS DEVELOPMENT<br>
+    </p>
+
+    <!-- REDIRECT LINKS -->
+    <div class="cards">
+
+      <a href="mailto:wiranat.w@coralesg.com" class="card">
+        <h3>Email</h3>
+        <p>wiranat.w@coralesg.com</p>
+      </a>
+
+      <a href="tel:+66923366600" class="card">
+        <h3>Mobile</h3>
+        <p>+66 9 2336-6600</p>
+      </a>
+
+      <a href="https://www.corallife.co.th" class="card">
+        <h3>Website</h3>
+        <p>www.corallife.co.th</p>
+      </a>
+
+      <a href="WiranatWiriyakluythong.vcf" class="card">
+        <h3>Add contact</h3>
+        <p>Click here</p>
+        </a>
+
+         <a href="https://maps.app.goo.gl/U2QpcMWPtGRDR4CY6" class="card location-card">
+        <h3>Location</h3>
+        <p>CORAL LIFE Company 28 Soi Sukhumvit 39,Sukhumvit Rd,Khlong Tan Nuea, Vadhana Bangkok 10110 Thailand</p>
+        </a>
+    </div>
+
+    <div class="footer">
+      © 2026 WIRANAT WIRIYAKLUYTHONG(NAT)
+    </div>
+
+  </div>
+
+</body>
+</html>
