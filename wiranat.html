@@ -104,6 +104,37 @@
       color:#999;
       font-size:.9rem;
     }
+
+    @media (max-width:768px){
+
+    .container{
+        width:100%;
+        max-width:100%;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .location-card{
+        grid-column:span 1;
+    }
+
+    .card{
+        min-height:110px;
+        padding:20px;
+    }
+
+    h1{
+        font-size:1.5rem;
+    }
+
+    .card h3{
+        font-size:1.2rem;
+    }
+
+    }
   </style>
 </head>
 
