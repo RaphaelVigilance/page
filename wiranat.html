@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name</title>
+  <title>WIRANAT CORALLIFE</title>
 
   <style>
     *{
@@ -14,13 +14,28 @@
     }
 
     body{
-      background:#ffffff;
-      color:#222;
-      min-height:100vh;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      padding:20px;
+    color:#222;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    position:relative;
+    overflow:hidden;
+    }
+
+    body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background:url("bg-01.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    opacity:0.2;
+    z-index:-1;
     }
 
     .container{
@@ -54,17 +69,28 @@
     }
 
     .card{
-      border:1px solid #ddd;
-      border-radius:20px;
-      padding:25px;
-      cursor:pointer;
-      transition:.2s;
-      text-decoration:none;
-      color:inherit;
+    background:rgba(255,255,255,0.95);
+    border:1px solid rgba(255,255,255,0.8);
+    border-radius:24px;
+    padding:25px;
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,0.06);
+
+    backdrop-filter: blur(8px);
+
+    cursor:pointer;
+    transition:.25s;
+    text-decoration:none;
+    color:inherit;
+    }
+
+    .location-card{
+    grid-column:span 2;
     }
 
     .card:hover{
-      transform:translateY(-5px);
+      transform:translateY(-3px);
       box-shadow:0 8px 20px rgba(0,0,0,.08);
     }
 
@@ -85,51 +111,45 @@
   <div class="container">
 
     <!-- LOGO -->
-    <img src="logo.png" class="logo" alt="logo">
+    <img src="wiranat.png" class="logo" alt="logo">
 
     <!-- PROFILE -->
-    <h1>Your Name</h1>
+    <h1>WIRANAT WIRIYAKLUYTHONG(NAT)</h1>
     <p class="subtitle">
-      Your Title / About Yourself
+      BUSSINESS DEVELOPMENT<br>
     </p>
 
     <!-- REDIRECT LINKS -->
     <div class="cards">
 
-      <a href="#" class="card">
-        <h3>Portfolio</h3>
-        <p>Description here</p>
+      <a href="mailto:wiranat.w@coralesg.com" class="card">
+        <h3>Email</h3>
+        <p>wiranat.w@coralesg.com</p>
       </a>
 
-      <a href="#" class="card">
-        <h3>GitHub</h3>
-        <p>Description here</p>
+      <a href="tel:+66923366600" class="card">
+        <h3>Mobile</h3>
+        <p>+66 9 2336-6600</p>
       </a>
 
-      <a href="#" class="card">
-        <h3>Contact</h3>
-        <p>Description here</p>
+      <a href="https://www.corallife.co.th" class="card">
+        <h3>Website</h3>
+        <p>www.corallife.co.th</p>
       </a>
 
-      <a href="#" class="card">
-        <h3>Projects</h3>
-        <p>Description here</p>
-      </a>
+      <a href="WiranatWiriyakluythong.vcf" class="card">
+        <h3>Add contact</h3>
+        <p>Click here</p>
+        </a>
 
-      <a href="#" class="card">
-        <h3>Blog</h3>
-        <p>Description here</p>
-      </a>
-
-      <a href="#" class="card">
-        <h3>Social Media</h3>
-        <p>Description here</p>
-      </a>
-
+         <a href="https://maps.app.goo.gl/U2QpcMWPtGRDR4CY6" class="card location-card">
+        <h3>Location</h3>
+        <p>CORAL LIFE Company 28 Soi Sukhumvit 39,Sukhumvit Rd,Khlong Tan Nuea, Vadhana Bangkok 10110 Thailand</p>
+        </a>
     </div>
 
     <div class="footer">
-      © 2026 Your Name
+      © 2026 WIRANAT WIRIYAKLUYTHONG(NAT)
     </div>
 
   </div>
