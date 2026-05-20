@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project TRRN Railway Challenge 2026 — Sorayut Thongtaweephon</title>
-  <meta name="description" content="ออกแบบระบบควบคุมรถรางด้วย Microcontroller และระบบ IOT" />
+  <title>TRRN Railway Challenge 2026 — Sorayut Thongtaweephon</title>
+  <meta name="description" content="ระบบควบคุมรถรางอัจฉริยะด้วย Microcontroller และ IoT สำหรับการแข่งขัน TRRN Railway Challenge 2026" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:," />
 </head>
@@ -12,61 +12,85 @@
   <header class="site-header">
     <a href="index.html" class="brand">Mr.Sorayut Thongtaweephon</a>
     <nav>
-      <a href="works.html" class="btn">Working Experience</a>
+      <a href="works.html" class="btn">Projects</a>
       <a href="contact.html" class="btn">Contact</a>
     </nav>
   </header>
 
   <main class="container">
-    <a href="works.html" class="btn secondary small">← กลับ</a>
+    <a href="works.html" class="btn secondary small">← Back to Projects</a>
 
     <section class="hero">
-      <h1>Project Train TRRN Railway Challenge 2026</h1>
+      <h1>TRRN Railway Challenge 2026</h1>
       <ul class="meta">
-        <li>Stack: Microcontroller, MQTT, ESP32, C++</li>
-        <li>บทบาท: Hardware / Firmware / Control System</li>
+        <li>Stack: ATmega2560 · ESP32 · MQTT · Node-RED · AWS Cloud · C++</li>
+        <li>Role: Hardware / Firmware / Control System</li>
+        <li>Event: Thailand Railway Challenge 2025–2026</li>
+      </ul>
+      <p class="lead">
+        ระบบควบคุมรถรางอัจฉริยะที่สามารถสั่งการขับเคลื่อนได้ในระยะไกล
+        พร้อมระบบตรวจสอบสถานะการทำงานแบบ Real-time
+        พัฒนาขึ้นสำหรับการแข่งขัน TRRN Railway Challenge
+      </p>
+    </section>
+
+    <section>
+      <img src="TRRN.jpg" width="100%" alt="TRRN Railway Challenge — รถราง" style="border-radius:12px;display:block;margin-bottom:0.75rem;">
+      <img src="TRRN2.jpg" width="100%" alt="TRRN Railway Challenge — ระบบควบคุม" style="border-radius:12px;display:block;margin-bottom:0.75rem;">
+      <img src="TRRNposter.png" width="100%" alt="TRRN Railway Challenge — โปสเตอร์" style="border-radius:12px;display:block;margin-bottom:1.5rem;">
+    </section>
+
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        ออกแบบและพัฒนาระบบควบคุมรถรางสำหรับการแข่งขัน TRRN Railway Challenge
+        โดยบูรณาการ Microcontroller เข้ากับระบบ IoT เพื่อให้ผู้ควบคุมสามารถสั่งงานและ
+        ติดตามสถานะรถรางได้แบบ Real-time ผ่านเครือข่ายอินเทอร์เน็ต
+        ระบบรองรับการส่งคำสั่งขับเคลื่อนทั้งแบบ Manual และ Scheduled รวมถึง
+        การแจ้งเตือนเมื่อระบบผิดปกติ
+      </p>
+    </section>
+
+    <section>
+      <h2>System Architecture</h2>
+      <ul class="chip-list">
+        <li>สั่งการขับเคลื่อนในระยะไกลผ่าน IoT Dashboard</li>
+        <li>ตรวจสอบสถานะแบบ Real-time บน Node-RED</li>
+        <li>ATmega2560 จัดการ Logic ควบคุมหลัก</li>
+        <li>ESP32 เชื่อมต่อกับ AWS Cloud ผ่าน MQTT</li>
+        <li>ระบบแจ้งเตือนเมื่อตรวจพบความผิดปกติ</li>
+        <li>ออกแบบวงจรไฟฟ้าและ Wiring ครบถ้วน</li>
       </ul>
     </section>
 
     <section>
-      <img src="TRRN.jpg" width="100%" alt="TRRN Railway Challenge 2026 Project" style="border-radius:8px;display:block;margin-bottom:1.5rem;">
-      <img src="TRRN2.jpg" width="100%" alt="TRRN Railway Challenge 2026 Project" style="border-radius:8px;display:block;margin-bottom:1.5rem;">
-      <img src="TRRNposter.png" width="100%" alt="TRRN Railway Challenge 2026 Project" style="border-radius:8px;display:block;margin-bottom:1.5rem;">
-      <h2>Video</h2>
-      <p>สามารถดูวิดีโอการทำเดินรถด้วยระบบได้ <a href="https://www.facebook.com/share/r/1BE6AzMKyA/" target="_blank">ลิงก์นี้</a></p>
-      <h2>รายละเอียดโปรเจกต์</h2>
-      <p>ออกแบบระบบควบคุมรถราง โดยใช้ Microcontroller ร่วมกับระบบ IOT สามารถสั่งการระบบขับเคลื่อนได้ในระยะไกล และมีระบบตรวจสอบสถานะการทำงาน</p>
-    </section>
-
-    <section>
-      <h2>การทำงานของระบบ</h2>
+      <h2>Technical Stack</h2>
       <ul class="chip-list">
-        <li>สั่งการระบบขับเคลื่อนในระยะไกลผ่าน IOT</li>
-        <li>ตรวจสอบสถานะการทำงานแบบ Real-time</li>
-        <li>ควบคุมผ่าน Microcontroller</li>
-        <li>สื่อสารผ่าน MQTT Protocol</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>เทคโนโลยีที่ใช้</h2>
-      <ul class="chip-list">
-        <li>Microcontroller</li>
+        <li>ATmega2560</li>
         <li>ESP32</li>
         <li>MQTT Protocol</li>
         <li>Node-RED</li>
-        <li>C++</li>
         <li>AWS Cloud</li>
+        <li>C++</li>
+        <li>Electrical Design & Wiring</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Demo Video</h2>
+      <p>
+        ชมวิดีโอการเดินรถด้วยระบบได้ที่
+        <a href="https://www.facebook.com/share/r/1BE6AzMKyA/"
+           target="_blank" rel="noopener" style="color:var(--accent);">
+          Facebook Video →
+        </a>
+      </p>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>© <span id="year"></span> Sorayut Thongtaweephon · <a href="contact.html">Contact</a></p>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

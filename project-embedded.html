@@ -4,54 +4,71 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Handmade Microcontroller — Sorayut Thongtaweephon</title>
-  <meta name="description" content="ออกแบบและสร้าง Microcontroller จาก ATmega328P พร้อมใช้งานในโครงการต่าง ๆ" />
+  <meta name="description" content="ออกแบบและสร้าง Microcontroller จาก ATmega328P ตั้งแต่ Schematic จนถึง PCB และ Firmware" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:," />
 </head>
 <body>
   <header class="site-header">
-    <a href="index.html" class="brand">Mr.Sorayut Thongtaweephon</a>
+    <a href="index.html" class="brand">Sorayut Thongtaweephon</a>
     <nav>
-      <a href="works.html" class="btn">Working Experience</a>
+      <a href="works.html" class="btn">Projects</a>
       <a href="contact.html" class="btn">Contact</a>
     </nav>
   </header>
 
   <main class="container">
-    <a href="works.html" class="btn secondary small">← กลับ</a>
+    <a href="works.html" class="btn secondary small">← Back to Projects</a>
 
     <section class="hero">
       <h1>Handmade Microcontroller</h1>
       <ul class="meta">
-        <li>Stack: ATmega328P, C++</li>
-        <li>บทบาท: Hardware / Firmware</li>
+        <li>Stack: ATmega328P · PCB Design · C++</li>
+        <li>Role: Hardware / Firmware</li>
+        <li>Status: Deployed in production projects</li>
       </ul>
+      <p class="lead">
+        ออกแบบและสร้าง Microcontroller Board ตั้งแต่ต้นจนจบ — ตั้งแต่วาด Schematic
+        ออกแบบ PCB Layout บัดกรีชิ้นส่วน จนถึงเขียน Firmware และนำไปใช้งานจริงในโปรเจกต์
+      </p>
     </section>
 
     <section>
-      <img src="atmel328p.jpg" width="100%" alt="Handmade Microcontroller based on ATmega328P" style="border-radius:8px;display:block;margin-bottom:1.5rem;">
-      <h2>รายละเอียดโปรเจกต์</h2>
-      <p>ออกแบบและสร้าง Microcontroller จาก ATmega328P พร้อมใช้งานในโครงการต่าง ๆ โดยออกแบบวงจรและ PCB เอง</p>
+      <img src="atmel328p.jpg" width="100%" alt="Handmade ATmega328P Microcontroller Board" style="border-radius:12px;display:block;margin-bottom:1.5rem;">
     </section>
 
     <section>
-      <h2>การทำงานของระบบ</h2>
+      <h2>Project Overview</h2>
+      <p>
+        แทนที่จะใช้บอร์ดสำเร็จรูปอย่าง Arduino โปรเจกต์นี้มุ่งเน้นการสร้าง Microcontroller Board
+        ขึ้นมาเอง โดยใช้ <strong>ATmega328P</strong> เป็นหัวใจหลัก
+        กระบวนการครอบคลุมตั้งแต่การออกแบบวงจร Schematic การวาง PCB Layout
+        การบัดกรีชิ้นส่วนทั้งหมดด้วยมือ และการเขียน Firmware ด้วย C++
+        บอร์ดที่ได้ถูกนำไปใช้งานจริงในโปรเจกต์อื่น ๆ ต่อไป
+      </p>
+    </section>
+
+    <section>
+      <h2>Development Process</h2>
       <ul class="chip-list">
         <li>ออกแบบวงจร Schematic</li>
-        <li>ออกแบบ PCB Layout</li>
-        <li>บัดกรีและประกอบชิ้นส่วน</li>
-        <li>เขียน Firmware ด้วย C++</li>
-        <li>ทดสอบและนำไปใช้งานจริง</li>
+        <li>วาง PCB Layout และ Route สาย</li>
+        <li>บัดกรีและประกอบชิ้นส่วนทั้งหมด</li>
+        <li>เขียน Firmware ด้วย C</li>
+        <li>ทดสอบ Functionality และ Debug</li>
+        <li>Deploy ใช้งานจริงในโปรเจกต์</li>
       </ul>
     </section>
 
     <section>
-      <h2>เทคโนโลยีที่ใช้</h2>
+      <h2>Technical Stack</h2>
       <ul class="chip-list">
         <li>ATmega328P</li>
-        <li>C++</li>
+        <li>C</li>
         <li>PCB Design</li>
+        <li>Schematic Design</li>
         <li>Soldering</li>
+        <li>Electronic Circuit Design</li>
       </ul>
     </section>
   </main>
@@ -59,9 +76,6 @@
   <footer class="site-footer">
     <p>© <span id="year"></span> Sorayut Thongtaweephon · <a href="contact.html">Contact</a></p>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
