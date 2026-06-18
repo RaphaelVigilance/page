@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Home IoT System — Sorayut Thongtaweephon</title>
+  <meta name="description" content="ระบบ IoT ควบคุมบ้านอัจฉริยะด้วย Node-RED, MQTT, ESP32 และ ATmega328P" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand">Mr.Sorayut Thongtaweephon</a>
+    <nav>
+      <a href="works.html" class="btn">Projects</a>
+      <a href="contact.html" class="btn">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <a href="works.html" class="btn secondary small">← Back to Projects</a>
+
+    <section class="hero">
+      <h1>Smart Home IoT System</h1>
+      <ul class="meta">
+        <li>Stack: Node-RED · MQTT · ESP32 · ATmega328P · C++</li>
+        <li>Role: Hardware / Firmware / Server</li>
+        <li>Status: Completed</li>
+      </ul>
+      <p class="lead">
+        ระบบบ้านอัจฉริยะที่สามารถควบคุมและตรวจสอบอุปกรณ์ภายในบ้านได้แบบ Real-time
+        ผ่าน Dashboard บนเว็บเบราว์เซอร์หรือสมาร์ทโฟน
+      </p>
+    </section>
+
+    <section>
+      <img src="IOT.png" width="100%" alt="Smart Home IoT System Diagram" style="border-radius:12px;display:block;margin-bottom:0.75rem;">
+      <img src="Smarthome.jpg" width="100%" alt="Smart Home Physical Setup" style="border-radius:12px;display:block;margin-bottom:0.75rem;">
+      <img src="Smarthome2.jpg" width="100%" alt="Smart Home Dashboard" style="border-radius:12px;display:block;margin-bottom:1.5rem;">
+    </section>
+
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        โปรเจกต์นี้พัฒนาระบบ IoT สำหรับควบคุมอุปกรณ์ภายในบ้าน โดยใช้ <strong>Node-RED</strong> เป็น Server
+        หลักสำหรับประมวลผล Logic และแสดง Dashboard ผู้ใช้สามารถสั่งงานผ่านหน้าเว็บได้ทันที
+        ข้อมูลคำสั่งถูกส่งผ่าน <strong>MQTT Protocol</strong> ไปยัง ESP32
+        ซึ่งทำหน้าที่เป็น Gateway สื่อสารต่อไปยัง ATmega328P ด้วย UART เพื่อควบคุมอุปกรณ์ปลายทาง
+      </p>
+    </section>
+
+    <section>
+      <h2>System Architecture</h2>
+      <ul class="chip-list">
+        <li>Node-RED รับคำสั่งและแสดง Dashboard</li>
+        <li>MQTT Broker เป็นตัวกลางรับ-ส่งข้อมูล</li>
+        <li>ESP32 รับ MQTT และแปลงเป็น UART</li>
+        <li>ATmega328P ควบคุมอุปกรณ์ปลายทาง</li>
+        <li>Real-time Feedback จากอุปกรณ์กลับสู่ Dashboard</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Technical Stack</h2>
+      <ul class="chip-list">
+        <li>Node-RED</li>
+        <li>MQTT Protocol</li>
+        <li>ESP32</li>
+        <li>ATmega328P</li>
+        <li>UART Protocol</li>
+        <li>C++</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Demo Video</h2>
+      <p>
+        ชมวิดีโอการทำงานของระบบได้ที่
+        <a href="https://youtube.com/playlist?list=PLCyqf5hTKis9PwkaI84nEuiyrmiIXWlRq&si=2HC6AJ80T7gZRDqh"
+           target="_blank" rel="noopener" style="color:var(--accent);">
+          YouTube Playlist →
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Sorayut Thongtaweephon · <a href="contact.html">Contact</a></p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
