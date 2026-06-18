@@ -3,12 +3,117 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Smart Home IoT System — Sorayut Thongtaweephon</title>
-  <meta name="description" content="ระบบ IoT ควบคุมบ้านอัจฉริยะด้วย Node-RED, MQTT, ESP32 และ ATmega328P" />
+  <title>Internship — CORAL WISE · Sorayut Thongtaweephon</title>
+  <meta name="description" content="ประสบการณ์ฝึกงานที่ CORAL WISE Co., Ltd. กรุงเทพฯ — Sorayut Thongtaweephon" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:," />
+  <style>
+    /* ── Page-specific only ── */
+    .timeline-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-bottom: 0.5rem;
+    }
+    .ts-item {
+      padding: 1.1rem 1rem;
+      text-align: center;
+    }
+    .ts-item + .ts-item { border-left: 1px solid var(--border); }
+    .ts-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+      margin-bottom: 0.3rem;
+    }
+    .ts-value { font-size: 0.95rem; font-weight: 600; color: var(--text); }
+
+    .contribution-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .contrib-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .contrib-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      opacity: 0;
+      background: var(--accent-glow);
+      transition: opacity var(--transition);
+      pointer-events: none;
+    }
+    .contrib-card:hover { border-color: var(--border-hv); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(0,0,0,0.2); }
+    .contrib-card:hover::before { opacity: 1; }
+    .contrib-icon { font-size: 1.35rem; }
+    .contrib-card h3 { font-size: 0.9rem; font-weight: 600; color: var(--text); }
+    .contrib-card p  { font-size: 0.82rem; color: var(--muted); line-height: 1.55; }
+
+    .quote-block {
+      background: var(--panel);
+      border-left: 2px solid var(--accent);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      padding: 1.25rem 1.5rem;
+    }
+    .quote-block blockquote {
+      font-style: italic;
+      color: var(--text);
+      font-size: 0.95rem;
+      line-height: 1.75;
+      margin-bottom: 0.75rem;
+    }
+    .quote-block cite {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-style: normal;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .outcome-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+    }
+    .outcome-badge {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.1rem 1rem;
+      text-align: center;
+    }
+    .ob-num {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .ob-label { font-size: 0.75rem; color: var(--muted); margin-top: 0.35rem; }
+
+    @media (max-width: 540px) {
+      .timeline-strip { grid-template-columns: 1fr; }
+      .ts-item + .ts-item { border-left: none; border-top: 1px solid var(--border); }
+    }
+  </style>
 </head>
 <body>
+
   <header class="site-header">
     <a href="index.html" class="brand">Mr.Sorayut Thongtaweephon</a>
     <nav>
@@ -17,71 +122,127 @@
     </nav>
   </header>
 
-  <main class="container">
+  <main class="container narrow">
     <a href="works.html" class="btn secondary small">← Back to Projects</a>
 
     <section class="hero">
-      <h1>Smart Home IoT System</h1>
+      <div>
+        <p class="muted" style="font-family:'JetBrains Mono',monospace;font-size:0.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-bottom:0.5rem;">
+          Internship Experience
+        </p>
+        <h1>CORAL WISE<br><span class="accent">Co., Ltd.</span></h1>
+      </div>
       <ul class="meta">
-        <li>Stack: Node-RED · MQTT · ESP32 · ATmega328P · C++</li>
-        <li>Role: Hardware / Firmware / Server</li>
-        <li>Status: Completed</li>
+        <li>Bangkok, Thailand</li>
+        <li>27 Apr – 5 Jun 2026</li>
+        <li>Digital Transformation Division</li>
       </ul>
       <p class="lead">
-        ระบบบ้านอัจฉริยะที่สามารถควบคุมและตรวจสอบอุปกรณ์ภายในบ้านได้แบบ Real-time
-        ผ่าน Dashboard บนเว็บเบราว์เซอร์หรือสมาร์ทโฟน
+        ฝึกงานด้าน IoT Engineering ภายใต้การดูแลของ Head of Digital Transformation
+        โดยมีส่วนร่วมในโปรเจกต์จริงตั้งแต่ firmware ไปจนถึง network infrastructure
+        และ backend development
       </p>
     </section>
 
+    <div class="timeline-strip">
+      <div class="ts-item">
+        <div class="ts-label">เริ่มต้น</div>
+        <div class="ts-value">27 Apr 2026</div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-label">ระยะเวลา</div>
+        <div class="ts-value">6 สัปดาห์</div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-label">สิ้นสุด</div>
+        <div class="ts-value">5 Jun 2026</div>
+      </div>
+    </div>
+
     <section>
-      <img src="IOT.png" width="100%" alt="Smart Home IoT System Diagram" style="border-radius:12px;display:block;margin-bottom:0.75rem;">
-      <img src="Smarthome.jpg" width="100%" alt="Smart Home Physical Setup" style="border-radius:12px;display:block;margin-bottom:0.75rem;">
-      <img src="Smarthome2.jpg" width="100%" alt="Smart Home Dashboard" style="border-radius:12px;display:block;margin-bottom:1.5rem;">
+      <h2>Core Contributions</h2>
+      <div class="contribution-grid">
+        <div class="contrib-card">
+          <div class="contrib-icon">⚙️</div>
+          <h3>C-Language Backend</h3>
+          <p>พัฒนา backend ควบคุมระบบไฟด้วย Modbus RTU และ MQTT protocols</p>
+        </div>
+        <div class="contrib-card">
+          <div class="contrib-icon">🖥️</div>
+          <h3>Management GUI</h3>
+          <p>สร้าง user management GUI สำหรับระบบ lighting control system</p>
+        </div>
+        <div class="contrib-card">
+          <div class="contrib-icon">📡</div>
+          <h3>MQTT Listener Service</h3>
+          <p>ออกแบบและ implement MQTT listener service สำหรับระบบ real-time</p>
+        </div>
+        <div class="contrib-card">
+          <div class="contrib-icon">🌐</div>
+          <h3>Frontend & Translation</h3>
+          <p>ช่วย frontend dev และแปลเนื้อหาเว็บ technical จากอังกฤษเป็นภาษาจีน</p>
+        </div>
+        <div class="contrib-card">
+          <div class="contrib-icon">🔌</div>
+          <h3>Network Infrastructure</h3>
+          <p>ติดตั้ง LAN cabling สำหรับ Remote I/O modules ในสภาพแวดล้อมจริง</p>
+        </div>
+        <div class="contrib-card">
+          <div class="contrib-icon">📄</div>
+          <h3>API Documentation</h3>
+          <p>จัดทำ API documentation และ backend upgrade tasks สำหรับ platform ของบริษัท</p>
+        </div>
+      </div>
     </section>
 
     <section>
-      <h2>Project Overview</h2>
-      <p>
-        โปรเจกต์นี้พัฒนาระบบ IoT สำหรับควบคุมอุปกรณ์ภายในบ้าน โดยใช้ <strong>Node-RED</strong> เป็น Server
-        หลักสำหรับประมวลผล Logic และแสดง Dashboard ผู้ใช้สามารถสั่งงานผ่านหน้าเว็บได้ทันที
-        ข้อมูลคำสั่งถูกส่งผ่าน <strong>MQTT Protocol</strong> ไปยัง ESP32
-        ซึ่งทำหน้าที่เป็น Gateway สื่อสารต่อไปยัง ATmega328P ด้วย UART เพื่อควบคุมอุปกรณ์ปลายทาง
+      <h2>Broader Operational Activities</h2>
+      <p class="muted" style="margin-bottom:1rem;">
+        นอกจาก core development แล้ว ยังมีส่วนร่วมในงานด้านปฏิบัติการที่หลากหลาย
+        ครอบคลุมทั้งการสื่อสารกับ vendor, การจัดการอุปกรณ์, และการ onboard เครื่องมือภายในองค์กร
       </p>
-    </section>
-
-    <section>
-      <h2>System Architecture</h2>
       <ul class="chip-list">
-        <li>Node-RED รับคำสั่งและแสดง Dashboard</li>
-        <li>MQTT Broker เป็นตัวกลางรับ-ส่งข้อมูล</li>
-        <li>ESP32 รับ MQTT และแปลงเป็น UART</li>
-        <li>ATmega328P ควบคุมอุปกรณ์ปลายทาง</li>
-        <li>Real-time Feedback จากอุปกรณ์กลับสู่ Dashboard</li>
+        <li>Smart Meter Vendor Communication</li>
+        <li>Smart Blind Device Management</li>
+        <li>MAC Address &amp; IP Inventory</li>
+        <li>Relay &amp; I/O Module Debugging</li>
+        <li>Microsoft 365 Onboarding Support</li>
       </ul>
     </section>
 
     <section>
       <h2>Technical Stack</h2>
       <ul class="chip-list">
-        <li>Node-RED</li>
+        <li>C Language</li>
+        <li>Modbus RTU</li>
         <li>MQTT Protocol</li>
-        <li>ESP32</li>
-        <li>ATmega328P</li>
-        <li>UART Protocol</li>
-        <li>C++</li>
+        <li>IoT Systems</li>
+        <li>LAN Networking</li>
+        <li>Frontend Development</li>
+        <li>REST API</li>
+        <li>Microsoft 365</li>
       </ul>
     </section>
 
     <section>
-      <h2>Demo Video</h2>
-      <p>
-        ชมวิดีโอการทำงานของระบบได้ที่
-        <a href="https://youtube.com/playlist?list=PLCyqf5hTKis9PwkaI84nEuiyrmiIXWlRq&si=2HC6AJ80T7gZRDqh"
-           target="_blank" rel="noopener" style="color:var(--accent);">
-          YouTube Playlist →
-        </a>
-      </p>
+      <h2>Letter of Recommendation</h2>
+      <div class="quote-block">
+        <blockquote>
+          "Mr. Sorayut proved to be a fast learner who could operate with minimal supervision
+          in a demanding, multi-project environment. He consistently maintained professional
+          working hours and adapted readily to new technologies and cross-functional responsibilities.
+          His background in IoT, Modbus, and C programming was a strong foundation, and he expanded
+          his practical skills significantly over the course of the internship."
+        </blockquote>
+        <cite>— Head of Digital Transformation, CORAL WISE Co., Ltd. · Bangkok, June 5, 2026</cite>
+      </div>
     </section>
+
+    <section>
+      <img src="IMG_4658.HEIC" width="100%" alt="Handmade ATmega328P Microcontroller Board" style="border-radius:12px;display:block;margin-bottom:1.5rem;">
+    </section>
+
+
   </main>
 
   <footer class="site-footer">
